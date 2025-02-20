@@ -7,7 +7,7 @@ int main(void)
     PORTB = 0;
     while (1)
     {
-        if( PINB & (1<<PINB0))
+        if( PINB & (1<<PINB0)) // Leitura do fim de curso
         {
             PORTB |= (1<<PORTB4);
             PORTB &= ~(1<<PORTB5);
